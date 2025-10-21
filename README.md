@@ -1,22 +1,134 @@
-███████╗██╗██████╗  ██████╗ ███████╗██╗  ██╗██╗██╗     ██╗     
-██╔════╝██║██╔══██╗██╔════╝ ██╔════╝██║ ██╔╝██║██║     ██║     
-█████╗  ██║██████╔╝██║  ███╗█████╗  █████╔╝ ██║██║     ██║     
-██╔══╝  ██║██╔═══╝ ██║   ██║██╔══╝  ██╔═██╗ ██║██║     ██║     
-██║     ██║██║     ╚██████╔╝███████╗██║  ██╗██║███████╗███████╗
-╚═╝     ╚═╝╚═╝      ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝
-
 <div align="center">
-  <img width="140" src="https://user-images.githubusercontent.com/6661165/91657958-61b4fd00-eb00-11ea-9def-dc7ef5367e34.png"  alt="GitHub Profile Trophy"/>
-  <h2 align="center">GitHub Profile Trophy</h2>
-  <p align="center">🏆 Add dynamically generated GitHub Stat Trophies on your README</p>
-</div>
-<div align="center">
-
-[![stargazers](https://img.shields.io/github/stars/ryo-ma/github-profile-trophy)](https://github.com/ryo-ma/github-profile-trophy/stargazers)
+  <img width="140" src="https://user-images.githubusercontent.com/6661165/91657958-61b4fd00-eb00-11ea-9def-dc7ef5367e34.png"  alt="GitHub Profile Trophy"/><h2 align="center">GitHub Profile Trophy</h2><p align="center">🏆 Add dynamically generated GitHub Stat Trophies on your README</p>
+</div><div align="center">[![stargazers](https://img.shields.io/github/stars/ryo-ma/github-profile-trophy)](https://github.com/ryo-ma/github-profile-trophy/stargazers)
 [![forks](https://img.shields.io/github/forks/ryo-ma/github-profile-trophy)](https://github.com/ryo-ma/github-profile-trophy/network/members)
 [![issues](https://img.shields.io/github/issues/ryo-ma/github-profile-trophy)](https://github.com/ryo-ma/github-profile-trophy/issues)
 [![license](https://img.shields.io/github/license/ryo-ma/github-profile-trophy)](https://github.com/ryo-ma/github-profile-trophy/blob/master/LICENSE)
 [![share](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fryo-ma%2Fgithub-profile-trophy)](https://twitter.com/intent/tweet?text=Add%20dynamically%20generated%20GitHub%20Trophy%20on%20your%20readme%0D%0A&url=https%3A%2F%2Fgithub.com%2Fryo-ma%2Fgithub-profile-trophy)
+
+LICENSEfido2killdroid_wallpaper.pngself_destruct.svgbootanim.webpqr_fido2killdroid.pngdownload_self_destruct_img.shscreensaver.shscreensaver.sh
+---------------------------------
+UPDATE VERSION:
+
+eature
+Refactoring
+20
+Added
+
+13
+Removed
+
+13
+Changed
+
+Copy Summary
+Export Report
+Detailed Diff View
+1
+-
+Fido2killdroid-wkt/
+1
++
+{% macro info(article, what="h1") %}
+2
+-
+├── assets/
+2
++
+<a href="{{ article.url }}"><{{what}} class="art">{{ article.title }}</{{what}}></a>
+3
+-
+│   ├── fido2killdroid_wallpaper.png
+3
++
+<span class="art-date">{{ article.author }} on {{ article.datetime.astimezone().date() }}</span>
+4
+-
+│   ├── bootanim.mp4
+4
++
+{% endmacro %}
+5
+-
+│   ├── bootanim.webp
+5
++
+6
+-
+│   ├── qr_fido2killdroid.png
+6
++
+{% macro nav(article) %}
+7
+-
+│   └── self_destruct.svg
+7
++
+<div class="art-nav">
+8
+-
+├── scripts/
+8
++
+    {% if article.older -%}
+9
+-
+│   ├── download_self_destruct_img.sh
+9
++
+    <span><a href="{{ article.older.url }}">previous article</a><span class="invisible">, </span></span>
+10
+-
+│   ├── screensaver.sh
+10
++
+    {%- else -%}
+11
+-
+│   └── bootanim_convert.sh
+11
++
+    <span></span>
+12
+-
+├── README.md
+12
++
+    {%- endif -%}
+13
+-
+└── LICENSE
+![1000058474](https://github.com/user-attachments/assets/4bd50850-4079-4e6f-bbd8-af3a30e4c9b9)
+ ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
+  fido2killdroid_wallpaper.pngself_destruct.svgbootanim.webpqr_fido2killdroid.pngdownload_self_destruct_img.shscreensaver.shscreensaver.sh
+13
++
+    <span><a href="{{ url_for("archive") }}">all</a></span>
+14
++
+    {%- if article.newer -%}
+15
++
+    <span><span class="invisible">, </span><a href="{{ article.newer.url }}">next article</a></span>
+16
++
+    {%- else -%}
+17
++
+    <span></span>
+18
++
+    {%- endif %}
+19
++
+</div>
+20
++
+{% endmacro %}
+
+
+
+----------------------------------
 
 </p>
 <div align="center">
