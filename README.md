@@ -1,40 +1,4 @@
- 
-  fido2killdroid_wallpaper.pngself_destruct.svgbootanim.webpqr_fido2killdroid.pngdownload_self_destruct_img.shscreensaver.shscreensaver.sh
-13
-+
-    <span><a href="{{ url_for("archive") }}">all</a></span>
-14
-+
-    {%- if article.newer -%}
-15
-+
-    <span><span class="invisible">, </span><a href="{{ article.newer.url }}">next article</a></span>
-16
-+
-    {%- else -%}
-17
-+
-    <span></span>
-18
-+
-    {%- endif %}
-19
-+
-</div>
-20
-+
-{% endmacro %}
 
-
-
-----------------------------------
-
-</p>
-<div align="center">
-  <a href="https://github.com/wkt12/sponsors/wkt12">
-    <img src="https://img.shields.io/static/v1?label=Sponsor&wkt12=%E2%9D%A4&logo=GitHub&color=ff69b4" alt="Sponsor"/>
-  </a>
-</div>
 
 # Fido2KillDroid 🔐💣
 
