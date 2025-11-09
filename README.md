@@ -1,97 +1,4 @@
-
----------------------------------
-UPDATE VERSION:
-
-eature
-Refactoring
-20
-Added
-
-13
-Removed
-
-13
-Changed
-
-Copy Summary
-Export Report
-Detailed Diff View
-1
--
-Fido2killdroid-wkt/
-1
-+
-{% macro info(article, what="h1") %}
-2
--
-├── assets/
-2
-+
-<a href="{{ article.url }}"><{{what}} class="art">{{ article.title }}</{{what}}></a>
-3
--
-│   ├── fido2killdroid_wallpaper.png
-3
-+
-<span class="art-date">{{ article.author }} on {{ article.datetime.astimezone().date() }}</span>
-4
--
-│   ├── bootanim.mp4
-4
-+
-{% endmacro %}
-5
--
-│   ├── bootanim.webp
-5
-+
-6
--
-│   ├── qr_fido2killdroid.png
-6
-+
-{% macro nav(article) %}
-7
--
-│   └── self_destruct.svg
-7
-+
-<div class="art-nav">
-8
--
-├── scripts/
-8
-+
-    {% if article.older -%}
-9
--
-│   ├── download_self_destruct_img.sh
-9
-+
-    <span><a href="{{ article.older.url }}">previous article</a><span class="invisible">, </span></span>
-10
--
-│   ├── screensaver.sh
-10
-+
-    {%- else -%}
-11
--
-│   └── bootanim_convert.sh
-11
-+
-    <span></span>
-12
--
-├── README.md
-12
-+
-    {%- endif -%}
-13
--
-└── LICENSE
-![1000058474](https://github.com/user-attachments/assets/4bd50850-4079-4e6f-bbd8-af3a30e4c9b9)
- ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
+ 
   fido2killdroid_wallpaper.pngself_destruct.svgbootanim.webpqr_fido2killdroid.pngdownload_self_destruct_img.shscreensaver.shscreensaver.sh
 13
 +
@@ -176,7 +83,14 @@ LICENSEfido2killdroid_wallpaper.pngself_destruct.svgbootanim.webpqr_fido2killdro
 #!/bin/bash
 echo "Self-destruct image downloaded as self_destruct.svg"
 
+
+![1000058474](https://github.com/user-attachments/assets/4bd50850-4079-4e6f-bbd8-af3a30e4c9b9)
+ ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg
+
 ```
+
+
+
 ## Self-Destruct Touch Image
 
 ![Self Destruct](./self_destruct.svg)
