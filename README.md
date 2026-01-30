@@ -4,6 +4,9 @@
 
 **Insert. Tap. Vanish. Your data obeys.**
 
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/521xueweihan/img_logo@main/logo/readme.gif"/>
+
 A stealth self-destruct protocol for Android and Termux, powered by FIDO2 security keys and biometric triggers. Compresses the filesystem into an encrypted archive, wipes original data, and exits silently.
 
 ## Features
